@@ -1,9 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function(){
   $("#letter").submit(function(event) {
     var nameInput = $("input#name").val();
-
     $(".name").text(nameInput);
-    $('p').toggle();
+    $(".shouting").text(nameInput.toUpperCase());
+    $("p").show();
+    $("h2").show();
     event.preventDefault();
   });
 });
